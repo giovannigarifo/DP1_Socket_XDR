@@ -73,7 +73,6 @@ int serveRemoteHostXDR(int conn_s, FILE* stream_socket_r, FILE* stream_socket_w,
 
 //funzioni che implementano l'azione richiesta corrispondente ad un comando
 int sendFile(int conn_s, struct sockaddr_in remoteHostInfo, int remoteHostInfoLen, char* filename);
-int sendFileXDR(int conn_s, FILE* stream_socket_r, FILE* stream_socket_w, struct sockaddr_in remoteHostInfo, int remoteHostInfoLen, char* filename);
 int sendFileXDR_mmap(int conn_s, FILE* stream_socket_r, FILE* stream_socket_w, struct sockaddr_in remoteHostInfo, int remoteHostInfoLen, char* filename);
 
 //invio messaggio di errore al client per svariate cause
